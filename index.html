@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            display: inline-block;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .average-price {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Freelancer Forum</h1>
+        <p class="average-price">The average starting price is $<span id="average-price">30</span>.</p>
+        <h3>Available Freelancers</h3>
+        <table id="freelancer-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Starting Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- freelancers appearing here in a styled table with new cells and criteria being randomly generated. average price is also updating after a new cell is created -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
